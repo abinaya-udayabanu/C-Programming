@@ -7,15 +7,15 @@ int main(void)
 	scanf("%d\n",&c);
 	if((b<a)&&(a>c))
 	{
-		printf("a is the largest number");
+		printf("%d",a);
 	}
 	else if((a<b)&&(b>c))
 	{
-		printf("b is the largest number");
+		printf("%d",b);
 	}
 	else
 	{
-		printf("c is the largest number");
+		printf("%d",c);
 	}
 	return 0;
 	

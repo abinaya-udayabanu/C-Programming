@@ -30,7 +30,7 @@ int main(void) {
 	}
 	for(j=n-1;j>=0;j--)
 	{
-		if(sum<=a[j])
+		if(sum<=a[j]||a[j-1]<=a[j])
 		{
 			sum=sum+a[j];
 			scanf("%d",&sum);

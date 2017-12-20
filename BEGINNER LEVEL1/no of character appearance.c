@@ -1,9 +1,8 @@
 #include<stdio.h>
 #include<string.h>
 int main(void) {
-	// your code goes here
 	int i,j=0,n,c=1;
-	char a[30],b[30];
+	char a[30];
 	scanf("%s",a);
 	n=strlen(a);
 	printf("%d\n",n);

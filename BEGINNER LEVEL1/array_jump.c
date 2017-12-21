@@ -2,7 +2,7 @@
 
 int main(void) {
 	// your code goes here
-	int a[100],i=0,d,n;
+	int a[100],i=0,d,flag=0,n;
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
@@ -13,29 +13,27 @@ int main(void) {
 		printf("%d",a[i]);
 	}
 	printf("\n");
-	while(i<n)
+	for(i=0;i<n;i+=d)
 	{
-		
+		d=a[i];
 		if(i==n-1)
 		{
-			printf("true");
+			flag=flag+1;
 			break;
+			
 		}
 		else if(i<n-1)
 		{
 			continue;
 		}
-		d=a[i];
-		if(d<=a[n-1])
-		{
-			continue;
-			i+=d;
-		}
-		else
-		{
-			printf("false");
-			break;
-		}
+	}
+	if(flag==0)
+	{
+		printf("true");
+	}
+	else
+	{
+		printf("false");	
 	}
 	
 	return 0;

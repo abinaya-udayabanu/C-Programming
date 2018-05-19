@@ -5,6 +5,7 @@ int main(void) {
 	long int a[10000];
 	long int i,j,n;
 	long int temp;
+	int flag=0;
 	scanf("%ld",&n);
 	for(i=0;i<n;i++)
 	{
@@ -31,6 +32,7 @@ int main(void) {
 			{
 				if(a[i]!=a[i+1])
 				{
+					flag=flag+1;
 					printf("%ld ",a[i]);
 					break;
 				}
@@ -38,5 +40,10 @@ int main(void) {
 			}
 		}
 	}
+	if(flag==0)
+	{
+		printf("UNIQUE");
+	}
+	
 	return 0;
 }

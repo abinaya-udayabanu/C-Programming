@@ -16,7 +16,7 @@ int main(void) {
 	// your code goes here
 	char s[30];
 	int i,n;
-	scanf("%s",s);
+	scanf("%[^\n]s",s);
 	n=strlen(s);
 	for(i=0;i<n;i++)
 	{
